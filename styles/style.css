@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/******NAVBAR*******/
+
+.bck{
+    background-color: #181719;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar-dark{
+    border: none;
+}
+
+.navbar-brand{
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    font-family: "Crimson Pro", serif;
+    font-size: 14px;
+    line-height: 15.5px;
+    padding: 12px;
+}
+
+.navbar-brand:hover{
+    color:#181719;
+    background-color: #fff;
+}
+
+.navbar-nav{
+    margin-top: 0.5rem;
+    text-align: center;
+    margin-right: 3rem;
+}
+.navbar-nav a{
+    color: #fff !important;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin: 0.7rem;
+    padding: 0.1rem;
+    text-underline-offset: 0.5rem;
+}
+.navbar-nav .active{
+    text-decoration: underline 1px #fff;
+}
+.navbar-nav a{
+    text-decoration: underline 1px rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+.navbar-nav a:hover{
+    text-decoration-color: #fff;
+}
+
+/******MAIN*******/
+
+body{
+    background-color: #181719;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.text{
+    margin: 40px 5px 40px 40px;
+}
+
+.title{
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.img{
+    margin: 5rem;
+}
+.img img{   
+    width: 50rem;
+}
+
+.card{
+    background-color: #181719;
+    color: #fff;
+    width: 30rem;
+    margin-top: -5rem;
+    margin-left: 10rem;
+    border-radius: 3px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+.name img{
+    object-fit: contain;
+    margin: 0.5rem;
+    width: 5rem;
+    max-width: 80%;
+    border-radius: 50%;
+}
+.name h6{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.7rem 0.5rem 0.2rem;
+}
+
+.name p{
+    font-weight: 500;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin: 0rem 0.5rem 0.2rem;
+}
+
+.card h4{
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 1rem 2rem;
+    letter-spacing: 1.3px;
+}
+
+@media (min-width: 1200px){
+    main{
+        flex-direction: row;
+    }
+    .img{
+        margin-top: 0;
+    }
+    .img img{
+        max-width: 670px;
+    }
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.7;
+
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
